@@ -1,0 +1,273 @@
+20:08:01 **** Incremental Build of configuration Debug for project 7_SEGMENT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "7_SEGMENT.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\MCU_LAB_2\Stm32\7_SEGMENT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_SEGMENT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_SEGMENT.elf
+ 
+arm-none-eabi-size   7_SEGMENT.elf 
+arm-none-eabi-objdump -h -S  7_SEGMENT.elf  > "7_SEGMENT.list"
+arm-none-eabi-objcopy  -O ihex  7_SEGMENT.elf  "7_SEGMENT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9080	     48	   1664	  10792	   2a28	7_SEGMENT.elf
+arm-none-eabi-objcopy  -O binary  7_SEGMENT.elf  "7_SEGMENT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 7_SEGMENT.hex
+Finished building: 7_SEGMENT.bin
+ 
+ 
+Finished building: 7_SEGMENT.list
+ 
+20:08:17 **** Incremental Build of configuration Debug for project 7_SEGMENT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "7_SEGMENT.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\MCU_LAB_2\Stm32\7_SEGMENT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_SEGMENT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_SEGMENT.elf
+ 
+arm-none-eabi-size   7_SEGMENT.elf 
+arm-none-eabi-objdump -h -S  7_SEGMENT.elf  > "7_SEGMENT.list"
+arm-none-eabi-objcopy  -O ihex  7_SEGMENT.elf  "7_SEGMENT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9080	     48	   1664	  10792	   2a28	7_SEGMENT.elf
+arm-none-eabi-objcopy  -O binary  7_SEGMENT.elf  "7_SEGMENT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 7_SEGMENT.hex
+Finished building: 7_SEGMENT.bin
+ 
+ 
+Finished building: 7_SEGMENT.list
+ 
+20:09:46 **** Incremental Build of configuration Debug for project 7_SEGMENT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:86:1: error: expected ',' or ';' before 'void'
+   86 | void setTimer1(int duration){
+      | ^~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:183:3: warning: implicit declaration of function 'setTimer1'; did you mean 'setTimer0'? [-Wimplicit-function-declaration]
+  183 |   setTimer1(5);
+      |   ^~~~~~~~~
+      |   setTimer0
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:10:08 **** Incremental Build of configuration Debug for project 7_SEGMENT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'setTimer1':
+../Core/Src/main.c:87:28: error: 'TIMER_CYCLE_1' undeclared (first use in this function); did you mean 'TIME_CYCLE_1'?
+   87 |  timer1_counter = duration/TIMER_CYCLE_1;
+      |                            ^~~~~~~~~~~~~
+      |                            TIME_CYCLE_1
+../Core/Src/main.c:87:28: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:10:24 **** Incremental Build of configuration Debug for project 7_SEGMENT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "7_SEGMENT.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\MCU_LAB_2\Stm32\7_SEGMENT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_SEGMENT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_SEGMENT.elf
+ 
+arm-none-eabi-size   7_SEGMENT.elf 
+arm-none-eabi-objdump -h -S  7_SEGMENT.elf  > "7_SEGMENT.list"
+arm-none-eabi-objcopy  -O ihex  7_SEGMENT.elf  "7_SEGMENT.hex"
+arm-none-eabi-objcopy  -O binary  7_SEGMENT.elf  "7_SEGMENT.bin"
+   text	   data	    bss	    dec	    hex	filename
+   9080	     52	   1668	  10800	   2a30	7_SEGMENT.elf
+Finished building: default.size.stdout
+ 
+Finished building: 7_SEGMENT.hex
+Finished building: 7_SEGMENT.bin
+ 
+ 
+Finished building: 7_SEGMENT.list
+ 
+20:11:22 **** Incremental Build of configuration Debug for project 7_SEGMENT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "7_SEGMENT.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\MCU_LAB_2\Stm32\7_SEGMENT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_SEGMENT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_SEGMENT.elf
+ 
+arm-none-eabi-size   7_SEGMENT.elf 
+arm-none-eabi-objdump -h -S  7_SEGMENT.elf  > "7_SEGMENT.list"
+arm-none-eabi-objcopy  -O ihex  7_SEGMENT.elf  "7_SEGMENT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9080	     52	   1668	  10800	   2a30	7_SEGMENT.elf
+arm-none-eabi-objcopy  -O binary  7_SEGMENT.elf  "7_SEGMENT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 7_SEGMENT.hex
+Finished building: 7_SEGMENT.bin
+ 
+ 
+Finished building: 7_SEGMENT.list
+ 
+20:11:49 **** Incremental Build of configuration Debug for project 7_SEGMENT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "7_SEGMENT.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\MCU_LAB_2\Stm32\7_SEGMENT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_SEGMENT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_SEGMENT.elf
+ 
+arm-none-eabi-size   7_SEGMENT.elf 
+arm-none-eabi-objdump -h -S  7_SEGMENT.elf  > "7_SEGMENT.list"
+arm-none-eabi-objcopy  -O ihex  7_SEGMENT.elf  "7_SEGMENT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9080	     52	   1668	  10800	   2a30	7_SEGMENT.elf
+arm-none-eabi-objcopy  -O binary  7_SEGMENT.elf  "7_SEGMENT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 7_SEGMENT.hex
+Finished building: 7_SEGMENT.bin
+ 
+ 
+Finished building: 7_SEGMENT.list
+ 
+20:17:29 **** Incremental Build of configuration Debug for project 7_SEGMENT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'updateLEDMatrix':
+../Core/Src/main.c:472:59: error: invalid operands to binary & (have 'uint8_t *' {aka 'unsigned char *'} and 'int')
+  472 |  HAL_GPIO_WritePin(ROW0_GPIO_Port, ROW0_Pin, (code_matrix & 0x01) ? 0 : 1);
+      |                                               ~~~~~~~~~~~ ^
+      |                                               |
+      |                                               uint8_t * {aka unsigned char *}
+../Core/Src/main.c:473:59: error: invalid operands to binary & (have 'uint8_t *' {aka 'unsigned char *'} and 'int')
+  473 |  HAL_GPIO_WritePin(ROW1_GPIO_Port, ROW1_Pin, (code_matrix & 0x02) ? 0 : 1);
+      |                                               ~~~~~~~~~~~ ^
+      |                                               |
+      |                                               uint8_t * {aka unsigned char *}
+../Core/Src/main.c:474:59: error: invalid operands to binary & (have 'uint8_t *' {aka 'unsigned char *'} and 'int')
+  474 |  HAL_GPIO_WritePin(ROW2_GPIO_Port, ROW2_Pin, (code_matrix & 0x04) ? 0 : 1);
+      |                                               ~~~~~~~~~~~ ^
+      |                                               |
+      |                                               uint8_t * {aka unsigned char *}
+../Core/Src/main.c:475:59: error: invalid operands to binary & (have 'uint8_t *' {aka 'unsigned char *'} and 'int')
+  475 |  HAL_GPIO_WritePin(ROW3_GPIO_Port, ROW3_Pin, (code_matrix & 0x08) ? 0 : 1);
+      |                                               ~~~~~~~~~~~ ^
+      |                                               |
+      |                                               uint8_t * {aka unsigned char *}
+../Core/Src/main.c:476:59: error: invalid operands to binary & (have 'uint8_t *' {aka 'unsigned char *'} and 'int')
+  476 |  HAL_GPIO_WritePin(ROW4_GPIO_Port, ROW4_Pin, (code_matrix & 0x10) ? 0 : 1);
+      |                                               ~~~~~~~~~~~ ^
+      |                                               |
+      |                                               uint8_t * {aka unsigned char *}
+../Core/Src/main.c:477:59: error: invalid operands to binary & (have 'uint8_t *' {aka 'unsigned char *'} and 'int')
+  477 |  HAL_GPIO_WritePin(ROW5_GPIO_Port, ROW5_Pin, (code_matrix & 0x20) ? 0 : 1);
+      |                                               ~~~~~~~~~~~ ^
+      |                                               |
+      |                                               uint8_t * {aka unsigned char *}
+../Core/Src/main.c:478:59: error: invalid operands to binary & (have 'uint8_t *' {aka 'unsigned char *'} and 'int')
+  478 |  HAL_GPIO_WritePin(ROW6_GPIO_Port, ROW6_Pin, (code_matrix & 0x40) ? 0 : 1);
+      |                                               ~~~~~~~~~~~ ^
+      |                                               |
+      |                                               uint8_t * {aka unsigned char *}
+../Core/Src/main.c:479:59: error: invalid operands to binary & (have 'uint8_t *' {aka 'unsigned char *'} and 'int')
+  479 |  HAL_GPIO_WritePin(ROW7_GPIO_Port, ROW7_Pin, (code_matrix & 0x80) ? 0 : 1);
+      |                                               ~~~~~~~~~~~ ^
+      |                                               |
+      |                                               uint8_t * {aka unsigned char *}
+../Core/Src/main.c:471:10: warning: unused variable 'code' [-Wunused-variable]
+  471 |  uint8_t code = code_matrix[index];
+      |          ^~~~
+make: *** [Core/Src/subdir.mk:34: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+20:18:11 **** Incremental Build of configuration Debug for project 7_SEGMENT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "7_SEGMENT.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\MCU_LAB_2\Stm32\7_SEGMENT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_SEGMENT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_SEGMENT.elf
+ 
+arm-none-eabi-size   7_SEGMENT.elf 
+arm-none-eabi-objdump -h -S  7_SEGMENT.elf  > "7_SEGMENT.list"
+arm-none-eabi-objcopy  -O ihex  7_SEGMENT.elf  "7_SEGMENT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8464	     60	   1668	  10192	   27d0	7_SEGMENT.elf
+arm-none-eabi-objcopy  -O binary  7_SEGMENT.elf  "7_SEGMENT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 7_SEGMENT.hex
+Finished building: 7_SEGMENT.bin
+ 
+ 
+Finished building: 7_SEGMENT.list
+ 
+20:18:44 **** Incremental Build of configuration Debug for project 7_SEGMENT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "7_SEGMENT.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\MCU_LAB_2\Stm32\7_SEGMENT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_SEGMENT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_SEGMENT.elf
+ 
+arm-none-eabi-size   7_SEGMENT.elf 
+arm-none-eabi-objdump -h -S  7_SEGMENT.elf  > "7_SEGMENT.list"
+arm-none-eabi-objcopy  -O ihex  7_SEGMENT.elf  "7_SEGMENT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8464	     60	   1668	  10192	   27d0	7_SEGMENT.elf
+arm-none-eabi-objcopy  -O binary  7_SEGMENT.elf  "7_SEGMENT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 7_SEGMENT.hex
+Finished building: 7_SEGMENT.bin
+ 
+ 
+Finished building: 7_SEGMENT.list
+ 
+20:19:08 **** Incremental Build of configuration Debug for project 7_SEGMENT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "7_SEGMENT.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\MCU_LAB_2\Stm32\7_SEGMENT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_SEGMENT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_SEGMENT.elf
+ 
+arm-none-eabi-size   7_SEGMENT.elf 
+arm-none-eabi-objdump -h -S  7_SEGMENT.elf  > "7_SEGMENT.list"
+arm-none-eabi-objcopy  -O ihex  7_SEGMENT.elf  "7_SEGMENT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8464	     60	   1668	  10192	   27d0	7_SEGMENT.elf
+arm-none-eabi-objcopy  -O binary  7_SEGMENT.elf  "7_SEGMENT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 7_SEGMENT.hex
+Finished building: 7_SEGMENT.bin
+ 
+ 
+Finished building: 7_SEGMENT.list
+ 
+20:19:42 **** Incremental Build of configuration Debug for project 7_SEGMENT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "7_SEGMENT.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\MCU_LAB_2\Stm32\7_SEGMENT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_SEGMENT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_SEGMENT.elf
+ 
+arm-none-eabi-size   7_SEGMENT.elf 
+arm-none-eabi-objdump -h -S  7_SEGMENT.elf  > "7_SEGMENT.list"
+arm-none-eabi-objcopy  -O ihex  7_SEGMENT.elf  "7_SEGMENT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9080	     52	   1668	  10800	   2a30	7_SEGMENT.elf
+arm-none-eabi-objcopy  -O binary  7_SEGMENT.elf  "7_SEGMENT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 7_SEGMENT.hex
+Finished building: 7_SEGMENT.bin
+ 
+ 
+Finished building: 7_SEGMENT.list
+ 
+20:19:48 **** Incremental Build of configuration Debug for project 7_SEGMENT ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "7_SEGMENT.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\MCU\MCU_LAB_2\Stm32\7_SEGMENT\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="7_SEGMENT.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 7_SEGMENT.elf
+ 
+arm-none-eabi-size   7_SEGMENT.elf 
+arm-none-eabi-objdump -h -S  7_SEGMENT.elf  > "7_SEGMENT.list"
+arm-none-eabi-objcopy  -O ihex  7_SEGMENT.elf  "7_SEGMENT.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9080	     52	   1668	  10800	   2a30	7_SEGMENT.elf
+arm-none-eabi-objcopy  -O binary  7_SEGMENT.elf  "7_SEGMENT.bin"
+Finished building: default.size.stdout
+ 
+Finished building: 7_SEGMENT.hex
+Finished building: 7_SEGMENT.bin
+ 
+ 
+Finished building: 7_SEGMENT.list
+ 
